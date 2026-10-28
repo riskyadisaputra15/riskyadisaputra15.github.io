@@ -11,9 +11,6 @@
         body { font-family: 'Inter', sans-serif; }
         .bg-navy-main { background-color: #0f172a; }
         .bg-navy-card { background-color: #1e293b; }
-        .text-accent { color: #38bdf8; }
-        .bg-accent { background-color: #0284c7; }
-        .border-accent { border-color: #0284c7; }
     </style>
 </head>
 <body class="bg-navy-main text-slate-100 min-h-screen">
@@ -25,12 +22,11 @@
             <div class="space-x-6 hidden md:flex text-sm font-medium text-slate-300">
                 <a href="#tentang" class="hover:text-sky-400 transition">Tentang Saya</a>
                 <a href="#kompetensi" class="hover:text-sky-400 transition">Kompetensi</a>
-                <a href="#pengalaman" class="hover:text-sky-400 transition">Pengalaman</a>
                 <a href="#proyek" class="hover:text-sky-400 transition">Studi Kasus Proyek</a>
                 <a href="#kontak" class="hover:text-sky-400 transition">Kontak</a>
             </div>
             <a href="https://wa.me/6285195555703" target="_blank" class="bg-sky-600 hover:bg-sky-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition flex items-center gap-2">
-                <i class="fab font-bold fa-whatsapp"></i> Hubungi Saya
+                <i class="fab fa-whatsapp text-lg"></i> Hubungi Saya
             </a>
         </div>
     </nav>
@@ -45,7 +41,7 @@
                 Risky Adi Saputra, S.Ak.
             </h1>
             <p class="text-lg text-slate-300 mb-6 leading-relaxed">
-                Operations Manager dengan 13+ tahun pengalaman (9+ tahun di posisi manajerial). Berlatar belakang S1 Akuntansi yang memberikan kombinasi langka antara **efisiensi kontrol finansial** dan **pengambilan keputusan cepat di lapangan**. Terbukti mengelola 5.500+ penerima layanan per tahun, memangkas biaya operasional sebesar 12%, dan mempercepat pemrosesan dokumen hingga 15%.
+                Operations Manager dengan 13+ tahun pengalaman (9+ tahun di posisi manajerial). Berlatar belakang S1 Akuntansi yang memberikan kombinasi langka antara <strong class="text-white font-semibold">efisiensi kontrol finansial</strong> dan <strong class="text-white font-semibold">pengambilan keputusan cepat di lapangan</strong>. Terbukti mengelola 5.500+ penerima layanan per tahun, memangkas biaya operasional sebesar 12%, dan mempercepat pemrosesan dokumen hingga 15%.
             </p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 <div class="bg-slate-800 p-4 rounded-xl border border-slate-700/60">
@@ -73,13 +69,20 @@
             </div>
         </div>
         <div class="md:w-1/3 flex justify-center">
-            <div class="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden border-2 border-sky-500/30 shadow-2xl bg-slate-800">
-                <img src="FOTO RISKY ADI SAPUTRA_ACCOUNT RECEIVABLE_2.png" alt="Risky Adi Saputra" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='Generasi Emas (2)_3.png';">
+            <div class="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden border-2 border-sky-500/30 shadow-2xl bg-slate-800 flex flex-col items-center justify-center p-4">
+                <img src="foto-profil.png" alt="Risky Adi Saputra" class="w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+                <div id="avatar-fallback" class="hidden w-full h-full flex flex-col items-center justify-center bg-slate-800 text-center p-6">
+                    <div class="w-24 h-24 bg-sky-950 rounded-full border border-sky-600 flex items-center justify-center mb-4 text-sky-400 text-4xl font-bold">
+                        RAS
+                    </div>
+                    <h3 class="text-white font-bold text-lg">Risky Adi Saputra</h3>
+                    <p class="text-xs text-slate-400 mt-1">Operations & Logistics Manager</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Kompetensi Utam Section -->
+    <!-- Kompetensi Utama Section -->
     <section id="kompetensi" class="py-16 bg-slate-900 border-y border-slate-800">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Kompetensi & Keahlian Utama</h2>
@@ -88,7 +91,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700/50">
                     <div class="w-12 h-12 bg-sky-950 rounded-xl flex items-center justify-center text-sky-400 text-xl mb-4 border border-sky-800">
-                        <i class="fas font-bold fa-truck-ramps"></i>
+                        <i class="fas fa-truck-ramp-box"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-white mb-2">Operasional & Logistik</h3>
                     <ul class="text-sm text-slate-300 space-y-2">
@@ -100,7 +103,7 @@
                 </div>
                 <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700/50">
                     <div class="w-12 h-12 bg-sky-950 rounded-xl flex items-center justify-center text-sky-400 text-xl mb-4 border border-sky-800">
-                        <i class="fas font-bold fa-calculator"></i>
+                        <i class="fas fa-calculator"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-white mb-2">Finansial & Audit Data</h3>
                     <ul class="text-sm text-slate-300 space-y-2">
@@ -112,14 +115,14 @@
                 </div>
                 <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700/50">
                     <div class="w-12 h-12 bg-sky-950 rounded-xl flex items-center justify-center text-sky-400 text-xl mb-4 border border-sky-800">
-                        <i class="fas font-bold fa-users-gear"></i>
+                        <i class="fas fa-users-gear"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-white mb-2">Leadership & Strategi</h3>
                     <ul class="text-sm text-slate-300 space-y-2">
                         <li>• Cross-Department Team Leadership</li>
                         <li>• Strategic TOWS / SWOT Analysis</li>
                         <li>• Sales Pipeline & Field Performance</li>
-                        <li>• Customer Crisis Rapid Resolution (<15 mnt)</li>
+                        <li>• Customer Crisis Rapid Resolution (&lt;15 mnt)</li>
                     </ul>
                 </div>
             </div>
@@ -132,7 +135,6 @@
         <p class="text-slate-400 mb-12">Ringkasan hasil audit, mitigasi operasional, dan optimasi bisnis nyata yang telah dikerjakan.</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Proyek 1 -->
             <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-sky-500/50 transition">
                 <div class="flex justify-between items-start mb-4">
                     <span class="text-xs font-semibold px-3 py-1 bg-sky-950 text-sky-400 border border-sky-800 rounded-md">Audit Strategis</span>
@@ -140,7 +142,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-white mb-3">Audit Operational Manifest & Strategi Ceruk Pasar #UmrahSehat</h3>
                 <p class="text-sm text-slate-300 leading-relaxed mb-4">
-                    Mengunci keberhasilan pengolahan 549 jemaah terlayani dengan membangun benteng bisnis diferensiasi pendampingan medis 24 jam. Menemukan fakta 60,7% jemaah merupakan usia lansia (>=50 tahun) dan mendata 49 kasus rekam medis.
+                    Mengunci keberhasilan pengolahan 549 jemaah terlayani dengan membangun benteng bisnis diferensiasi pendampingan medis 24 jam. Menemukan fakta 60,7% jemaah merupakan usia lansia (&gt;=50 tahun) dan mendata 49 kasus rekam medis.
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs text-slate-400 border-t border-slate-700/60 pt-4">
                     <span class="bg-slate-900 px-2 py-1 rounded">549 Jemaah</span>
@@ -149,7 +151,6 @@
                 </div>
             </div>
 
-            <!-- Proyek 2 -->
             <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-sky-500/50 transition">
                 <div class="flex justify-between items-start mb-4">
                     <span class="text-xs font-semibold px-3 py-1 bg-sky-950 text-sky-400 border border-sky-800 rounded-md">Manajemen Krisis</span>
@@ -157,16 +158,15 @@
                 </div>
                 <h3 class="text-xl font-bold text-white mb-3">SOP Mitigasi & Manajemen Krisis Flight Emergency Response</h3>
                 <p class="text-sm text-slate-300 leading-relaxed mb-4">
-                    Merumuskan panduan standar operasional penanganan pembatalan dan penundaan maskapai penerbangan (Lion Air & Garuda Indonesia). Memasang SLA respon kabar <1 jam dan penyesuaian land arrangement Arab Saudi tanpa denda.
+                    Merumuskan panduan standar operasional penanganan pembatalan dan penundaan maskapai penerbangan (Lion Air & Garuda Indonesia). Memasang SLA respon kabar &lt;1 jam dan penyesuaian land arrangement Arab Saudi tanpa denda.
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs text-slate-400 border-t border-slate-700/60 pt-4">
-                    <span class="bg-slate-900 px-2 py-1 rounded">SLA < 1 Jam</span>
+                    <span class="bg-slate-900 px-2 py-1 rounded">SLA &lt; 1 Jam</span>
                     <span class="bg-slate-900 px-2 py-1 rounded">Zero Escalation</span>
                     <span class="bg-slate-900 px-2 py-1 rounded">Mitigasi Bandara Juanda</span>
                 </div>
             </div>
 
-            <!-- Proyek 3 -->
             <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-sky-500/50 transition">
                 <div class="flex justify-between items-start mb-4">
                     <span class="text-xs font-semibold px-3 py-1 bg-sky-950 text-sky-400 border border-sky-800 rounded-md">Digital Audit</span>
@@ -183,7 +183,6 @@
                 </div>
             </div>
 
-            <!-- Proyek 4 -->
             <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-sky-500/50 transition">
                 <div class="flex justify-between items-start mb-4">
                     <span class="text-xs font-semibold px-3 py-1 bg-sky-950 text-sky-400 border border-sky-800 rounded-md">Sales & CRM Audit</span>
@@ -191,7 +190,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-white mb-3">Audit Sales Lapangan, Re-Engagement Mitra & SOP Telemarketing</h3>
                 <p class="text-sm text-slate-300 leading-relaxed mb-4">
-                    Menganalisis 77 kunjungan sales lapangan, menyelesaikan kendala 79,1% mitra pasif melalui Digital Marketing Kit 1-click share, serta merombak skrip CS Telemarketing menuju pendekatan *Value-First*.
+                    Menganalisis 77 kunjungan sales lapangan, menyelesaikan kendala 79,1% mitra pasif melalui Digital Marketing Kit 1-click share, serta merombak skrip CS Telemarketing menuju pendekatan Value-First.
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs text-slate-400 border-t border-slate-700/60 pt-4">
                     <span class="bg-slate-900 px-2 py-1 rounded">14 Closing Executed</span>
